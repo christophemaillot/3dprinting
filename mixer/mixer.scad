@@ -2,7 +2,7 @@
 
 // global definitions
 
-$fn = 20;
+$fn = 100;
 e = 1;
 
 // our objet dimensions
@@ -12,10 +12,10 @@ plateau_rayon = 13;     // mm
 
 horstout_rayon = 17;
 
-ecrou_rayon = 6;
+ecrou_rayon = 4.8; // 4 puis 6 puis 5
 
 rayon_bottom = 8;
-epaisseur_bottom = 4;
+epaisseur_bottom = 4.5;
 
 ecrou_epaisseur = 3;
 
@@ -38,10 +38,10 @@ module pic() {
                 translate([0, 0, -0.5])
                     pie_slice(horstout_rayon, 30);
 
-
             linear_extrude(10)
                 translate([0, 0, -0.5])
                     pie_slice(horstout_rayon, 30);
+
         }
         
         
